@@ -1,9 +1,12 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    <div>
+      <h2>Vue Router Demo</h2>
+    </div>
+    <div class="nav-wrapper">
+      <router-link active-class="active" to="/home">Home</router-link>
+      <router-link active-class="active" to="/about">About</router-link>
+    </div>
     <router-view />
   </div>
 </template>
@@ -17,16 +20,17 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
+.nav-wrapper a {
   font-weight: bold;
   color: #2c3e50;
+  margin-right: 10px;
+  padding: 5px;
+  display: inline-block;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.nav-wrapper a.router-link-exact-active {
+  /* color: #42b983; */
+  background: #85b0e9;
+  border-radius: 5px;
 }
 </style>
