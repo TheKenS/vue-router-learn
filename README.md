@@ -26,4 +26,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### 进度
 120 嵌套路由
 。。。 中间省略
-128 路由生命周期钩子
+129 全局前置__路由守卫
+132 组件内路由守卫
